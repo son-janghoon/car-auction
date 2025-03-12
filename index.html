@@ -146,33 +146,8 @@ th, td {
     <!-- Google Sheets에서 불러온 데이터가 여기에 들어감 -->
     </tbody>
        
-        <tr>
-            <!-- 차명 2줄 이상 표시 가능하도록 조정 -->
-            <td class="car-name">{{ car.차명 }}</td>
-            <td>{{ car.연식 }}</td>
-            
-                        
-            <!-- 주행거리 중복 'km' 제거 -->
-            <td>{{ car.주행거리.replace(' km km', ' km') }}</td>
-            <td>{{ car.최저매각가격 }}</td>
-            <td class="fuel-type">{{ car.연료종류 }}</td> <!-- ✅ 여기에 추가 -->
-            <td>
-            <!-- 매각기일 날짜와 시간 분리 -->
-            
-                <strong>{{ car.매각기일.split(' ')[0] }}</strong><br>
-                {{ car.매각기일.split(' ', 1)[1] }}
-            </td>
-            <td>{{ car.사건번호 }}</td>
-            <td>{{ car.물건번호 }}</td>
-            <td>{{ car.등록번호 }}</td>
-            
-            <!-- 담당 법원 링크 유지 -->
-            <td>
-                <a href="https://www.courtauction.go.kr/pgj/index.on?w2xPath=/pgj/ui/pgj100/PGJ151F00.xml" target="_blank">{{ car.담당 }}</a>
-            </td>
-        </tr>
-        {% endfor %}
-    </tbody>
+
+           </tbody>
 </table>
 
     <!-- ++++++++++ JavaScript 추가 (버튼 클릭 시 내용 표시) ++++++++++ -->
