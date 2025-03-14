@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+}
+
+/* 검색창 스타일 */
+#search-box {
+    width: 300px;
+    height: 40px;
+    font-size: 1.2em;
+    padding: 5px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+}
+
+button {
+    height: 46px;
+    font-size: 1.2em;
+    padding: 5px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 설명 박스 스타일 */
+.guide-box {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* 테이블 스타일 */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    word-break: break-word;
+    height: 60px;
+}
